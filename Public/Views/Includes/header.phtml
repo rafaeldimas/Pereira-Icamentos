@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pereira Içamentos - {{title}} </title>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="./Public/Assets/dist/css/img/icons/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./Public/Assets/dist/css/inc/font-awesome/css/font-awesome.min.css">
+    {% for css in assets.css %}
+<link rel="stylesheet" href="./Public/Assets/dist/css/{{css}}">
+    {% endfor %}
+
+</head>
+<body>
+    <section class="container">
+        <header class="row">
+            <div class="logo col-sm-3">
+                <h1>Logo</h1>
+            </div>
+            <nav class="menu col-sm-9">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/trabalhos">Nosso Trabalhos</a></li>
+                    <li><a href="/orcamentos">Orçamentos</a></li>
+                </ul>
+            </nav>
+        </header>
